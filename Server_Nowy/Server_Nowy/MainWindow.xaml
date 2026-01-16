@@ -1,0 +1,20 @@
+﻿<Window x:Class="Server_Nowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server_Nowy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="626" Width="433">
+    <Grid Margin="0,0,0,0" HorizontalAlignment="Left" Width="431">
+        <TextBlock HorizontalAlignment="Left" Margin="10,40,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="94" FontSize="20"/>
+        <TextBox x:Name="tbHostAddress" HorizontalAlignment="Left" Margin="104,40,0,0" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Height="33"/>
+        <TextBlock HorizontalAlignment="Left" Margin="240,40,0,0" Text="Port" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="46" FontSize="20"/>
+        <TextBox x:Name="nUDPort" HorizontalAlignment="Left" Margin="307,40,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="33"/>
+        <TextBox x:Name="Server" HorizontalAlignment="Left" Text="Server" TextWrapping="Wrap" VerticalAlignment="Top" Width="399" Height="242" Margin="10,90,0,0"/>
+        <Button x:Name="bStart" Content="Start" HorizontalAlignment="Left" Margin="10,347,0,0" VerticalAlignment="Top" Height="20" Width="101" Click="bStart_Click" RenderTransformOrigin="0.516,0.64"/>
+        <Button x:Name="bStop" Content="Stop" HorizontalAlignment="Left" Margin="308,347,0,0" VerticalAlignment="Top" Height="20" Width="101" Click="bStop_Click"/>
+        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Margin="10,396,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="399" Height="127"/>
+        <Button x:Name="bSend" Content="Send" HorizontalAlignment="Center" Margin="0,542,0,0" VerticalAlignment="Top" Width="101" Click="bSend_Click"/>
+    </Grid>
+</Window>
